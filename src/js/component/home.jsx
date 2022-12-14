@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./component/Card.jsx"
+import Card from "./Card.js"
 
 //create your first component
 const Home = () => {
