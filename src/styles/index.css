@@ -5,8 +5,12 @@ body{
     margin-top: 200px;
     background-color: black;
     width: 400px;
+    height: 300px;
+    align-items: center;
 
 }
 .card{
-    background-color: red;
+    align: center;
+   width: 150px;
+    background: greenyellow;
 }
