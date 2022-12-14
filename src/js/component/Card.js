@@ -2,28 +2,36 @@ import React, { useState, useEffect } from "react";
 
 
 function Card (props) {
-    const [counter, setCounter ] = useState(0);
 
-   useEffect(() => {
-        clearTimeout(miTimeout)
-        const miTimeout = setTimeout(() => {
-            setCounter(counter + 1);
-        }, 1000);
-    }, [counter])
+    const [time, setTime ] = useState({m:0, s:0, ms:0});
+    const [interv, setInterv ] =useState ();
 
-    return (
-        <div className="card">
-        <div className="card-body">
+    const start =() => { console.log(start)
+        TimeOn( );
+        setInterval(setInterval(TimeOn,10));
+        };  
 
-                <h5 className="card-title">{props.title}</h5>
+     var  timecounterM = time.m  ,timecounterS = time.s ,timecounterMS = time.ms;
 
-                <p className="card-text">{counter}</p>
-
-                <a href="#" onClick={() => setCounter(0)} className="btn btn-primary">Reset</a>
-
-            </div>
-        </div>
-    )
-};
+        const TimeOn = ( )=>{
+        if (timecounterM === 59){
+            timecounterM(timecounterM +1);
+            return
+            }
+        
+        if(timecounterS === 60){
+            timecounterM++;
+            timecounterS = 0;
+            }
+        }
+        if(timecounterMS === 100){
+            timecounterS++;
+            timecounterMS = 0;
+            }
+            timecounterMS++
+            return setTime ({timecounterM:0, timecounterS:0, timecounterMS:0});
+        
+    
+    };    
 
 export default Card;
