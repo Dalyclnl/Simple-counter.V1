@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 
 
-function Card (props) {
+function Counter (props) {
 
     const [time, setTime ] = useState({m:0, s:0, ms:0});
-    const [interv, setInterv ] =useState ();
+    //const [interv, setInterv ] =useState ();
 
     const start =() => { console.log(start)
         TimeOn( );
         setInterval(setInterval(TimeOn,10));
         };  
 
-     var  timecounterM = time.m  ,timecounterS = time.s ,timecounterMS = time.ms;
+     var  timecounterM = time_m  ,timecounterS = time_s ,timecounterMS = time_ms;
 
         const TimeOn = ( )=>{
         if (timecounterM === 59){
@@ -30,8 +30,9 @@ function Card (props) {
             }
             timecounterMS++
             return setTime ({timecounterM:0, timecounterS:0, timecounterMS:0});
-        
+            
+            console.log(TimeOn)
     
     };    
 
-export default Card;
+export default Counter;

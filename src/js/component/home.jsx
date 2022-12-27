@@ -1,17 +1,26 @@
 import React from "react";
-import Card from "./Card.js"
+import Counter from "./SecondCounter";
+import PropTypes from 'prop-types';
+
 
 //create your first component
 const Home = () => {
-	return (
+	    return (
 			<div className="container">
-				<div className="card">
-					<span>{props.time.m} </span> xx:xx
-					<span>{props.time.s} </span> xx:xx
-					<span>{props.time.ms} </span> xx:xx
-				</div>
+			   <div className="card body">
+					<span>{props.time_m}</span> 
+					<span>{props.time_s}</span> 
+					<span>{props.time_ms}</span> 
+				</div>	
 			</div>
 	);
  };
 
 export default Home;
+
+
+Counter.propTypes = {
+	time_m: PropTypes.number,
+	time_s: PropTypes.number,
+	time_ms: PropTypes.number,
+};
