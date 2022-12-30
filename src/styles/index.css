@@ -1,18 +1,23 @@
 body{
     background-color: aliceblue;
 }
-.container{
+.bigCounter{
     margin: 200px;
     background-color: black;
     width: 600px;
-    height: 300px;
-    align-items: center;
-
+    height: 250px;
+    
 }
-.card body{
-    padding-top: 30px;
-    width: 300px;
+.digit{
+    padding:5px;
+    margin:2px;
+    width: 150px;
     height: 200px;
+    border: 10px;
+    font-size: 100px;
+    display: inline;
+}
+
+#four{
     background: greenyellow;
-    border: 20px;
 }
