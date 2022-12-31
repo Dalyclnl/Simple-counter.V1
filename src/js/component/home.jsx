@@ -7,7 +7,7 @@ import SecondCounter from "./simplecounter";
 const Home = () => {
 	return (
 		<>
-		<SecondCounter seconds={3434} />
+		<SecondCounter />
 		</>);
    }
 export default Home;

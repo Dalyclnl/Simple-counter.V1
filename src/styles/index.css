@@ -5,30 +5,28 @@ body{
 .bigCounter{
     margin: 200px;
     background-color: black;
-    width: 900px;
-    height: 200px;
+    width: auto;
+    height: auto;
     display:  inline-block;
     
 }
 .Clock{
+    margin:5px;
     padding:5px;
-    margin:2px;
-    border: 10px;
     font-size: 120px;
     display: inline;
-    background: #fff12f;
+    color: rgb(255, 252, 47);
 }
 
 .digit{
     padding:5px;
-    margin:2px;
-    border: 10px;
-    font-size: 120px;
+    margin: auto;
+    font-size: 130px;
     display: inline;
 }
 
 #four{
-    color: rgb(255, 165, 47);
+    color:greenyellow;
 }
 
 #three{
@@ -40,5 +38,5 @@ body{
 }
 
 #one{
-    color: greenyellow;
+    color:greenyellow;
 }

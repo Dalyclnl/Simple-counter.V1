@@ -22,6 +22,7 @@ SecondCounter.propTypes ={
 };
 
 
+
 let counter = 0;
 
 setInterval(function(){
@@ -33,7 +34,7 @@ setInterval(function(){
 	counter ++;
 
 	ReactDOM.render(<SecondCounter digitOne={one} digitTwo={two} digitThree={three} digitFour={four}/>,document.querySelector("#app"));
-},10);
+},100);
 
 
 
