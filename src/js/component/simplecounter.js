@@ -22,5 +22,3 @@ function SecondCounter(props){
 
 export default SecondCounter;
 
-//<button onClick={handlePause}>pausa</button>
-			//<button onClick={handleStart}>inicio</button>
