@@ -1,23 +1,44 @@
+
 body{
     background-color: aliceblue;
 }
 .bigCounter{
     margin: 200px;
     background-color: black;
-    width: 600px;
-    height: 250px;
+    width: 900px;
+    height: 200px;
+    display:  inline-block;
     
 }
+.Clock{
+    padding:5px;
+    margin:2px;
+    border: 10px;
+    font-size: 120px;
+    display: inline;
+    background: #fff12f;
+}
+
 .digit{
     padding:5px;
     margin:2px;
-    width: 150px;
-    height: 200px;
     border: 10px;
-    font-size: 100px;
+    font-size: 120px;
     display: inline;
 }
 
 #four{
-    background: greenyellow;
+    color: rgb(255, 165, 47);
+}
+
+#three{
+    color: greenyellow;
+}
+
+#two{
+    color: greenyellow;
+}
+
+#one{
+    color: greenyellow;
 }
